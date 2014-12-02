@@ -24,7 +24,7 @@ public class AmbientScript : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		fadeOut = false;
-		otherObject.audio.volume = 1;
+		otherObject.audio.volume = 0.3f;
 		if (!otherObject.audio.isPlaying) {
 			otherObject.audio.Play ();
 			otherObject.audio.loop = true;
